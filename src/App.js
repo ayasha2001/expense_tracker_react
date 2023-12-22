@@ -1,5 +1,6 @@
 import Card from "./components/UI/Card";
 import ExpenseItem from "./components/expense/ExpenseItem";
+import NewExpense from "./components/newExpense/NewExpense";
 function App() {
   const expenses = [
     {
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       <h2>Expense Item!</h2>
       <Card className="expense container">
+        <NewExpense />
         {expenses.map((expense, i) => {
           return (
             <Card className="expense">
