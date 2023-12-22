@@ -1,5 +1,5 @@
 import React from "react";
-import "./ExpenseItem.css";
+import "./Expense.css";
 import ExpenseDate from "./ExpenseDate";
 import ExpenseDetail from "./ExpenseDetail";
 
