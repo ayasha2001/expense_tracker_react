@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <h2>Expense Item!</h2>
-      <Card className="expense">
+      <Card className="expense container">
         {expenses.map((expense, i) => {
           return (
             <Card className="expense">
