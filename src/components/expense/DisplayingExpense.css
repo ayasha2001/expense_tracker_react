@@ -1,0 +1,9 @@
+
+.display-message {
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+  }

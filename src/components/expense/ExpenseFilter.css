@@ -14,7 +14,7 @@
 
 select {
   height: 30px;
-  width: 70px;
+  width: 90px;
   border: 2px solid #fff; /* Add white border */
   border-radius: 8px; /* Add border radius */
   cursor: pointer;
