@@ -26,22 +26,26 @@ function App() {
   ];
 
   const [allExpenses, setAllExpense] = useState(expenses);
-  const [filteredYear, setFilteredYear] = useState('2020');
+  const [filteredYear, setFilteredYear] = useState("2020");
 
   const onNewExpenseAddition = (new_expense) => {
     setAllExpense((prevExpense) => [...prevExpense, new_expense]);
   };
 
   const filterChangeHandler = (selectedYear) => {
-    setFilteredYear(selectedYear)
-  }
+    console.log(selectedYear)
+    setFilteredYear(selectedYear);
+  };
 
   return (
     <div className="App">
       <h2>Expense Item!</h2>
+      <NewExpense onNewExpenseAddition={onNewExpenseAddition} />
       <Card className="expense container">
-        {/* <NewExpense onNewExpenseAddition={onNewExpenseAddition} /> */}
-        <ExpenseFilter selected={filteredYear} onChange={filterChangeHandler} />
+        <ExpenseFilter
+          selected={filteredYear}
+          onChangeFilter={filterChangeHandler}
+        />
         {allExpenses.map((expense, i) => {
           return <ExpenseItem prop={expense} key={i} />;
         })}

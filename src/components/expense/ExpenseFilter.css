@@ -1,0 +1,37 @@
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.label {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  height: 30px;
+  width: 70px;
+  border: 2px solid #fff; /* Add white border */
+  border-radius: 8px; /* Add border radius */
+  cursor: pointer;
+  font-weight: bold; /* Make the text bold */
+}
+select option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Style the selected option */
+  select option:checked {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Change styles on hover */
+  select option:hover {
+    background-color: #ddd;
+  }
