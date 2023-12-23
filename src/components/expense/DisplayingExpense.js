@@ -9,8 +9,8 @@ const DisplayingExpense = ({ filteredExpenses }) => {
   }
   return (
     <>
-      {filteredExpenses.map((expense, i) => {
-        return <ExpenseItem prop={expense} key={i} />;
+      {filteredExpenses.map((expense) => {
+        return <ExpenseItem prop={expense} key={expense.id} />;
       })}
       {filteredExpenses.length === 1 && (
         <p className="display-message">

@@ -43,8 +43,8 @@ const Expenses = () => {
 
   return (
     <div>
-      <h2>Expense Item!</h2>
-      <NewExpense onNewExpenseAddition={onNewExpenseAddition} />
+      {/* <h2>Expense Item!</h2> */}
+      <NewExpense onNewExpenseAddition={onNewExpenseAddition}/>
       <Card className="expense container">
         <ExpenseFilter
           selected={filteredYear}
