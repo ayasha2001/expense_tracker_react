@@ -3,6 +3,7 @@ import Card from "../UI/Card";
 import NewExpense from "../newExpense/NewExpense";
 import ExpenseFilter from "./ExpenseFilter";
 import DisplayingExpense from "./DisplayingExpense";
+import ExpenseChart from "./ExpenseChart";
 
 const DUMMY_EXPENSES = [
   {
@@ -44,12 +45,13 @@ const Expenses = () => {
   return (
     <div>
       {/* <h2>Expense Item!</h2> */}
-      <NewExpense onNewExpenseAddition={onNewExpenseAddition}/>
+      <NewExpense onNewExpenseAddition={onNewExpenseAddition} />
       <Card className="expense container">
         <ExpenseFilter
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
+        <ExpenseChart expenses={filteredExpenses} />
         <div>
           <DisplayingExpense filteredExpenses={filteredExpenses} />
         </div>

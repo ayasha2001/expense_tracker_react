@@ -3,7 +3,6 @@ import ExpenseItem from "./ExpenseItem";
 import "./DisplayingExpense.css";
 
 const DisplayingExpense = ({ filteredExpenses }) => {
-  console.log(filteredExpenses.length);
   if (filteredExpenses.length === 0) {
     return <h2 className="display-message">no item to display</h2>;
   }
